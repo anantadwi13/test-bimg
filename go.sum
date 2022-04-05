@@ -1,2 +1,4 @@
 github.com/anantadwi13/bimg v0.0.0-20220405024938-d613e42da6fd h1:tsiifdu2hSTB5OMiINUjDZdHOleBCVMa5jiLVTTUaWY=
 github.com/anantadwi13/bimg v0.0.0-20220405024938-d613e42da6fd/go.mod h1:yfACYyqPHupVT7ipqFa0mClpUq6XXZ8Dl+xUk5wdQd0=
+golang.org/x/sync v0.0.0-20210220032951-036812b2e83c h1:5KslGYwFpkhGh+Q16bwMP3cOontH8FOep7tGV86Y7SQ=
+golang.org/x/sync v0.0.0-20210220032951-036812b2e83c/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
