@@ -5,6 +5,7 @@ import (
 	"github.com/h2non/bimg"
 	"os"
 	"runtime"
+	"strconv"
 	"sync"
 	"time"
 )
@@ -25,6 +26,13 @@ func main() {
 		concurrentReq = runtime.NumCPU() * 4
 		wg            sync.WaitGroup
 	)
+
+	concurrentReqString := os.Getenv("CONCURRENT_REQ")
+	if concurrentReqString != "" {
+		if temp, err := strconv.Atoi(concurrentReqString); err == nil {
+			concurrentReq = temp
+		}
+	}
 
 	for epoch := 0; epoch < 10; epoch++ {
 		fmt.Printf("queueing #%v\n", epoch)
